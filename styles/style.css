@@ -100,6 +100,7 @@ ol {
   align-items: center;
   gap: 5px;
   width: fit-content;
+  cursor: pointer;
 }
 
 .search-form__label:has(:focus-visible) {
@@ -160,7 +161,6 @@ ol {
   height: 19px;
   border: 1px solid #fff;
   padding: 1px;
-  cursor: pointer;
 }
 
 .search-form__pseudo-checkbox::after {
@@ -196,12 +196,13 @@ ol {
 
 .button:focus-visible {
   outline: 1px solid #fff;
+  outline-offset: 1px;
 }
 
 .search-form__submit-button {
   align-self: end;
   width: 194px;
-  height: 34px;
+  min-height: 34px;
 }
 
 .content__details {
@@ -228,7 +229,8 @@ ol {
   gap: 30px;
   height: 298px;
   margin-top: 22px;
-  overflow-y: scroll;
+  overflow-y: auto;
+  width: 399px;
 }
 
 .content__list {
@@ -255,7 +257,7 @@ ol {
 
 .content__card-link:hover {
   text-decoration: underline;
-  text-underline-offset: 0px;
+  text-underline-offset: 1px;
 }
 
 .content__card-link:focus {
@@ -279,6 +281,7 @@ ol {
 
 .content__video-card-description-container {
   flex-grow: 1;
+  overflow: hidden;
 }
 
 .content__video-card-title {
@@ -293,12 +296,16 @@ ol {
 }
 
 .content__video-card-description {
-  overflow: hidden;
   font-weight: 400;
   font-size: 18px;
   line-height: 0.9;
   text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
   line-clamp: 4;
+  overflow: hidden;
+
 }
 
 .content__video-card-thumbnail {
