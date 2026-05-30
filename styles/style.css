@@ -151,7 +151,7 @@ ol {
 
 .search-form__checkbox:checked 
 + 
-.search-form__pseudo-checkbox::after{
+.search-form__pseudo-checkbox::after {
   opacity: 1;
 }
 
