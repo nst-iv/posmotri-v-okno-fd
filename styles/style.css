@@ -149,7 +149,9 @@ ol {
   text-decoration: underline;
 }
 
-.search-form__checkbox:checked + .search-form__pseudo-checkbox::after{
+.search-form__checkbox:checked 
++ 
+.search-form__pseudo-checkbox::after{
   opacity: 1;
 }
 
@@ -208,7 +210,7 @@ ol {
 }
 
 .title {
-  font-family: 'Oswald', sans-serif;;
+  font-family: 'Oswald', sans-serif;
   font-weight: 700;
   font-size: 75px;
   line-height: 94%;
@@ -282,7 +284,7 @@ ol {
 .content__video-card-title {
   margin-bottom: 6px;
   overflow: hidden;
-  font-family: 'Oswald', sans-serif;;
+  font-family: 'Oswald', sans-serif;
   font-weight: 700;
   font-size: 30px;
   line-height: 100%;
